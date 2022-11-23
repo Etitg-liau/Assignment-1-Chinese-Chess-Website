@@ -1,0 +1,21 @@
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    float:left;
+}
+.headingmenu1{
+    float: right;
+    font-size: 20px;
+    justify-content: space-around;
+}
+.headingmenu2{
+    float: right;
+    font-size: 20px;
+}
+.slider{
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+}
