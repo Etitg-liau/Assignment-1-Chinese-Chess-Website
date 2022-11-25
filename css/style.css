@@ -1,0 +1,54 @@
+.heading{
+    background-color: peru;
+    display: flex;
+    justify-content: space-between;
+    height: 8rem;
+}
+.heading a {
+    float: right;
+}
+.logo{
+    float:left;
+}
+.headingmenu1 {
+    font-family: 'Righteous', cursive;
+    border: 2px solid black;
+    width: 100%;
+    font-size: 30px;
+}
+.headingmenu2{
+    font-family: 'Righteous', cursive;
+    float: right;
+    font-size: 10px;
+    border: 2px solid darkblue;
+}
+.slider{
+    display: inline-block;
+    width: 30px;
+}
+.maintext{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lexend Deca', sans-serif;
+    overflow: hidden;
+    border-right: .15em dashed salmon;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .1em;
+    animation: 
+        typing 3.5s steps(40,end),
+        blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from{width: 0%}
+    to{width:80%}
+}
+@keyframes blink-caret{
+    from, to {border-color:transparent}
+    0%{border-color:salmon;}
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
