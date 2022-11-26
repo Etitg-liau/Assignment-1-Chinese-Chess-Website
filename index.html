@@ -5,38 +5,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Righteous&family=Noto+Sans+SC&family=Gowun+Batang&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Normalize.css">
     <script src="js/script.js" differ></script>
     <title>Document</title>
-    
+    <style>
+        /*Background Image*/
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .background{
+            width:100%;
+            height:100%; 
+            background-image: url('Images/Background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+    <div class="heading">
+        <div class="logo">
+        <img src="Images/Logo.jpg" class = "img1" width = 72 height = 72>
+        </div>
+        <div class="headingmenucn">
+            <label>NP Chinese Chess</label>
+            <p>运筹帷幄 决胜千里</p>
+        </div>
+        <div class="headingmenu1">
+        <br>
+        <a href="#About">About Us</a>
+        </div>
+        <div class="headingmenu2">
+            <br>
+            <a href="#">Join Us</a>
+        </div>
+        <!-- English to Chinese -->
+        <div class="headingmenu3">
+            <label>ENG > 华文</label><br>
+            <label class="language">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
 </head>
 <body>
-    <div class="heading">
-        <div class ="logo">
-        <img src="Images/Logo.jpg" class = "img1" width = 120 height = 120>
+    <div class="background">
+        <br>
+        <h1 class ="maintext">Welcome, you are at NP Chinese Chess SIG</h1><span class ="maintext"></span>
+        <br>
+        <div class="menu">
+        <img src = "http://www.youtoart.com/design_pic/bigpic//b_1249222146744.jpg">
+        <br>
         </div>
-        <div>
-
+        <div class="sectionhead">
+            <u><h2 id="About">About Us:</h2><br></u>
         </div>
-        <div class ="headingmenu1">
-        <a href="#">About Us</a>
+        <div class="section">
+            <b><p> We are Students in Ngee Ann Polytechnic who enjoy learning and playing Chinese Chess, whether leisurely or competetively. All are welcome to join.</p>
+            <p>All that matters is you are interested to learn, and remember</p>
+            
+            <p> Contact us at: cca_chess@connect.np.edu.sg</p></b>
+            <a href = "https://www.np.edu.sg/Pages/default.aspx">Ngee Ann Polytechnic</a><br>
+            <img src="Images/f2f.jpg" width = 1000px height = 1000px><br>
         </div>
-        <div class ="headingmenu2">
-        <label for="slider" font-family='Righteous',cursive;>EN > 华文</label>
-        <input class ="slider" type="range" id = "slider" name = "slider" min = "0" max = "1">
+        <div class="sectionhead">
+            <h2> How to Play:</h2>
+        </div>
+        <div class="section">
+            <p> Are you new to Chinese Chess? Do you want to know how to play, and what are the pieces?</p>
+            <a href="html/beginner.html"> Click here to find out more!</a>
+        </div>
+        <div class="sectionhead">
+            <h2> Puzzles: </h2>
+        </div>
+        <div class="section"><!-- zoom in - magnifying glass -->
+            <div class="magnify">
+            <img src="images/puzzles_Page_1.jpg" width = 50% height = 50%>
+            </div>
+            <div class="magnify">
+            <img src="images/puzzles_Page_2.jpg" width = 50% height = 50%>
+            </div>
         </div>
     </div>
-    <h1 class ="maintext">Welcome, you are at NP Chinese Chess SIG</h1><span class ="maintext"></span>
-    <div class="menu">
-    <img src = "http://www.youtoart.com/design_pic/bigpic//b_1249222146744.jpg">
-    </div>
-    
-
-<h3> About us: </h3>
-<p> We are Students who enjoy learning and playing Chinese Chess, whether leisurely or competetively. All are welcome to join.</p>
-<p> Contact us at: cca_chess@connect.np.edu.sg</p>
-<a href = "https://www.np.edu.sg/Pages/default.aspx">Ngee Ann Polytechnic</a>
 </body>
 </html>
