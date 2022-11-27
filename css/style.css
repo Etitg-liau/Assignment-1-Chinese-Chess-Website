@@ -24,6 +24,17 @@
 .headingmenu1:hover{
     text-shadow: -1px 1px 0 white; 
 }
+.motto{
+    color:rgb(109, 104, 27);
+    border:4px groove lightskyblue;
+    font-size: 40px;
+}
+.partner{
+    background-color:darkgoldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* Join Us */
 .headingmenu2{    
     font-size:30px;
@@ -31,6 +42,18 @@
 }
 .headingmenu2:hover{
     text-shadow:-1px 1 px 0 white;
+}
+.gmail:hover{
+    background-color: red;
+    color:white;
+}
+.instagram:hover{
+    color:white;
+    background:linear-gradient(to left, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.discord:hover{
+    color:white;
+    background-color:darkslategray;
 }
 /* English to Chinese*/
 .headingmenu3{
@@ -138,9 +161,38 @@ input:checked + .slider:before {
     display:block;
     text-align:center;
     font-family:'Gowun Batang', serif;
-    color:azure;
+    color:darkslateblue;
     font-size: 23px;
+}
+/*puzzle pages*/
+.prev{
+    padding:32px;
+    float:left;
+}
+.prev:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,1), 0 17px 50px 0 rgba(0,0,0,1);
+}
+.next{
+    padding:32px;
+    float:right;
+}
+.next:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,1), 0 17px 50px 0 rgba(0,0,0,1);
+}
+.puzzle:hover{
+    transform: scale(1.1);
 }
 .magnify:hover{
     transform: scale(1.7);
+}
+/* Tournament */
+.compsection{
+    color:darkblue;
+    font-family: 'Gowun Batang', serif;
+    font-size: 20px;
+}
+table, th, td {
+    border: 2px ridge black;
+    margin-left: auto;
+    margin-right: auto;
 }
