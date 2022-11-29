@@ -16,24 +16,39 @@
     font-size: 20px;
 }
 /* About Us */
+.aboutsection{
+    background-color: goldenrod;
+}
 .headingmenu1 {
     width: 65%;
     font-size: 30px;
-    color:white;
 }
 .headingmenu1:hover{
     text-shadow: -1px 1px 0 white; 
 }
 .motto{
-    color:rgb(109, 104, 27);
-    border:4px groove lightskyblue;
+    color:rgb(73, 69, 6);
+    border:4px groove firebrick;
     font-size: 40px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.motto:hover{
+    border-color: coral;
+    background-color: lightslategray;
+}
+/*chess partners*/
+.par{
+    font-size: 40px;
+    font-family: 'Carter One';
+    color:dodgerblue;
 }
 .partner{
-    background-color:darkgoldenrod;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    border: 8px ridge skyblue;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 /* Join Us */
 .headingmenu2{    
@@ -41,7 +56,12 @@
     width:6.8%;
 }
 .headingmenu2:hover{
-    text-shadow:-1px 1 px 0 white;
+    text-shadow:-1px 1px 0 white;
+}
+.note{
+    font-size:18px;
+    color: crimson;
+    font-family: 'Carter One', cursive;
 }
 .gmail:hover{
     background-color: red;
@@ -127,17 +147,16 @@ input:checked + .slider:before {
     font-family: 'Lexend Deca', sans-serif;
     overflow: hidden;
     color:orangered;
-    border-right: .15em dashed salmon;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .1em;
     animation: 
-        typing 5s steps(40,end),
-        blink-caret .75s step-end;
+        typing 2s steps(40,end),
+        blink-caret .2s steps(25,end);
 }
 @keyframes typing {
     from{width: 0%}
-    to{width:80%}
+    to{width:100%}
 }
 @keyframes blink-caret{
     from, to {border-color:transparent}
@@ -186,13 +205,34 @@ input:checked + .slider:before {
     transform: scale(1.7);
 }
 /* Tournament */
+.tournamentsection{
+    background-color: silver;
+}
 .compsection{
     color:darkblue;
     font-family: 'Gowun Batang', serif;
     font-size: 20px;
+    text-align: center;
 }
 table, th, td {
     border: 2px ridge black;
     margin-left: auto;
     margin-right: auto;
 }
+.achievements{
+    border:5px dashed darkred;
+    margin-left: 30%;
+    margin-right: 30%;
+    color:indigo;
+    text-align: center;
+}
+.bottomsection{
+    font-size: 15px;
+    color:mediumslateblue;
+}
+
+/* signup.html */
+/* Form 
+.form{
+    ahref;
+}*/
