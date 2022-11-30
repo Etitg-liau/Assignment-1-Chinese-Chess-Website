@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Normalize.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="js/script.js" differ></script>
     <!-- Font for form -->
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Poor+Story&display=swap" rel="stylesheet">
     <!-- Font for original css -->
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Righteous&family=Noto+Sans+SC&family=Gowun+Batang&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Joining Us</title>
     <div class="heading">
         <div class="logo">
         <img src="../Images/Logo.png" class = "img1" width = 72 height = 72>
@@ -45,57 +46,64 @@
     </div>
 
     <!-- Form -->
-    <div class="form">
-        <label> Username:<br>
-        <input type ="text" placeholder = "Student" name = "username">
+    <div class="form" label="signup">
+        <label> Name:<br>
+        <input type ="text" name = "name" required>
         </label>
-        <br>
+        <br><br>
+        <label> Surname: <br>
+        <input type="text" name = "surname" optional>
+        </label>
+        <br><br>
         <label> UserID:<br>
             <input type = "text" placeholder = "S1XXXXXXX" name = "userid">
         </label>
-        <br>
-        <label> Password:<br>
-        <input type ="text" placeholder = "Password" name = "password">
+        <br><br>
+        <label>Email:<br>
+            <input type="email" name ="email">
         </label>
+        <br><br>
+        <label> Are you from Ngee Ann Polyechnic?<br></label>
+            <select onchange="fromnp(this);">
+                <option value=""></option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <br>
+            <div id="ifYes" style="display: block;">
+                <label>If no, enter your institution:</label>
+                <br>
+                <input type="text" id="not">
+            </div>
         <br>
-        <label> Address:<br>
-            <input type = "text" placeholder = "1 Ngee Ann Road" name = "address">
-        </label>
+        <label> Past experiences with Chinese Chess: (NIL if no experience) 
+        </label><br>
+        <input type = "text" name ="experience">
+        <br><br>
+        <label> How did you know about us?:</label><br>
+        <input type = "radio" name="know"> Instagram <input type = "radio" name="know"> Website <input type = "radio" name="know"> Discord <input type = "radio" name="know"> CCA Fiesta <input type = "radio" name="know"> Friends <input type = "radio" name="know"> Clubmates
         <br>
-        <label> Date Of Birth:<br>
-            <input type = "text" placeholder = "1 Jan 2000" name = "dob">
-        </label>
-        <br>
-        <label> Age: </label><br>
-        <input type = "radio" name="age" value="children">0-11<input type = "radio" name="age" value="sec school">12-16<input type = "radio" name="age" value="teenager/ young adult">17-25<input type = "radio" name="age" value="adult">>25
-        <br>
-        <label> Favourite Colour: </label><br>
-        <input type = "checkbox" name="color" value="red">Red<input type = "checkbox" name="color" value="blue">Blue<input type = "checkbox" name="color" value="yellow">Yellow<input type = "checkbox" name="color" value="black">Black<input type = "checkbox" name="color" value="white">White
-        <br>
-        <label> List of Hobbies: </label><br>
-        <textarea></textarea>
-        <br>
-        <label> Favourite Food: </label><br>
-        <textarea></textarea>
-        <br>
-        <button>Submit</button>
+        <input type="submit" length=10px>
     </div>
-
-
-    <div class="section">
-        <p>Our executive committee team will also organise a camp for members to better understand and bond together, we also have outings during holidays for members to keep in touch and have fun.</p>
-        <p>Occasionally we will have a mini-tournament among each division and prizes will be awarded to the top 3 of each division. This ensures members get to understand the competition atmosphere so that they will not be clueless about what to do when going for external competitions.</p>
-        <div class="gmail">
-            <p>Contact us via Gmail:</p>
-            <a href="mailto:cca_chess@connect.np.edu.sg" target="blank"><img src="../Images/Gmail.png" width=100 height=80></a>
+    <div class="aboutus">
+        <div class="heading2">
+            <p> Want to know <b>more</b> about us?</p>
         </div>
-        <div class="instagram">
-            <p>Follow us on Instagram:</p>
-            <a href="https://www.instagram.com/np_chess"><img src="../Images/Instagram.PNG" width="100" height= "100"></a><br>
-        </div>
-        <div class="discord">
-            <p>Join our Discord:</p>
-            <a href="https://discord.gg/3T5hjkXS"><img src="../Images/Discord.png" width="100" height="100"></a>
+        <div class="section">
+            <p>Our executive committee team will also organise a camp for members to better understand and bond together, we also have outings during holidays for members to keep in touch and have fun.</p>
+            <p>Occasionally we will have a mini-tournament among each division and prizes will be awarded to the top 3 of each division. This ensures members get to understand the competition atmosphere so that they will not be clueless about what to do when going for external competitions.</p>
+            <div class="gmail">
+                <b><p>Contact us via Gmail:</p></b>
+                <a href="mailto:cca_chess@connect.np.edu.sg" target="blank"><img src="../Images/Gmail.png" width=100 height=80></a>
+            </div>
+            <div class="instagram">
+                <b><p>Follow us on Instagram:</p></b>
+                <a href="https://www.instagram.com/np_chess"><img src="../Images/Instagram.PNG" width="100" height= "100"></a><br>
+            </div>
+            <div class="discord">
+                <b><p>Join our Discord:</p></b>
+                <a href="https://discord.gg/3T5hjkXS"><img src="../Images/Discord.png" width="100" height="100"></a>
+            </div>
         </div>
     </div>
 </body>
