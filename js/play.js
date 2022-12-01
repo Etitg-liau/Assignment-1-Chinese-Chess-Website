@@ -59,7 +59,7 @@ for (var i = 0; i < chsArr.length; i++) {
 function placeChess(side, name, y, x, i){
   var ch = document.createElement('span')
   ch.textContent = name
-  ch.classList.add('ch', side > 0 ? 'red': 'green')
+  ch.classList.add('ch', side > 0 ? 'red': 'black')
   ch.setAttribute('i', i)
   ch.style.top = en(y) + 'px'
   ch.style.left = en(x) + 'px'
@@ -84,7 +84,7 @@ document.addEventListener('mousedown', function(e){
   e = e.originalEvent || e
   // if (side < 0) {
   if (e.target.classList.contains('ch') &&
-      e.target.classList.contains(side > 0 ? 'red' : 'green')) {
+      e.target.classList.contains(side > 0 ? 'red' : 'black')) {
     if (pick[side] != null) {
       chss[pick[side]].classList.remove('active')
     }
@@ -129,10 +129,6 @@ document.addEventListener('mousedown', function(e){
 })
 // 实时计算 cursor更新
 function canGo(c, x, y){
-  // 不能吃右方 无需判断 因为点击即重新选取
-  // if (chsArr.some(function(c1){
-  //   return !c1.dead && c1[2] === y && c1[3] === x && c1[0] === c[0]
-  // })) return false
   let dx = x - c[3]
   let dy = y - c[2]
   if (c[1] === '兵' || c[1] === '卒') {
@@ -219,4 +215,4 @@ function nextTurn(){
     // }, 2000)
   } else {
   }
-}
+} 

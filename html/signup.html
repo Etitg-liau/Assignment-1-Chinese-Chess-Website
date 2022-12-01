@@ -46,45 +46,47 @@
     </div>
 
     <!-- Form -->
-    <div class="form" label="signup">
-        <label> Name:<br>
-        <input type ="text" name = "name" required>
-        </label>
-        <br><br>
-        <label> Surname: <br>
-        <input type="text" name = "surname" optional>
-        </label>
-        <br><br>
-        <label> UserID:<br>
-            <input type = "text" placeholder = "S1XXXXXXX" name = "userid">
-        </label>
-        <br><br>
-        <label>Email:<br>
-            <input type="email" name ="email">
-        </label>
-        <br><br>
-        <label> Are you from Ngee Ann Polyechnic?<br></label>
-            <select onchange="fromnp(this);">
-                <option value=""></option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-            <br>
-            <div id="ifYes" style="display: block;">
-                <label>If no, enter your institution:</label>
+    <form>
+        <div class="form" label="signup">
+            <label> Name:<br>
+            <input type ="text" name = "name" required>
+            </label>
+            <br><br>
+            <label> Surname: <br>
+            <input type="text" name = "surname" optional>
+            </label>
+            <br><br>
+            <label> UserID:<br>
+                <input type = "text" placeholder = "S1XXXXXXX" name = "userid" required>
+            </label>
+            <br><br>
+            <label>Email:<br>
+                <input type="email" name ="email" required>
+            </label>
+            <br><br>
+            <label> Are you from Ngee Ann Polyechnic?<br></label>
+                <select onchange="fromnp(this);">
+                    <option value=""></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
                 <br>
-                <input type="text" id="not">
-            </div>
-        <br>
-        <label> Past experiences with Chinese Chess: (NIL if no experience) 
-        </label><br>
-        <input type = "text" name ="experience">
-        <br><br>
-        <label> How did you know about us?:</label><br>
-        <input type = "radio" name="know"> Instagram <input type = "radio" name="know"> Website <input type = "radio" name="know"> Discord <input type = "radio" name="know"> CCA Fiesta <input type = "radio" name="know"> Friends <input type = "radio" name="know"> Clubmates
-        <br>
-        <input type="submit" length=10px>
-    </div>
+                <div id="ifYes" style="display: block;">
+                    <label>If no, enter your institution:</label>
+                    <br>
+                    <input type="text" id="not">
+                </div>
+            <br>
+            <label> Past experiences with Chinese Chess: (NIL if no experience) 
+            </label><br>
+            <input type = "text" name ="experience" required>
+            <br><br>
+            <label> How did you know about us?:</label><br>
+            <input type = "radio" name="know"> Instagram <input type = "radio" name="know"> Website <input type = "radio" name="know"> Discord <input type = "radio" name="know"> CCA Fiesta <input type = "radio" name="know"> Friends <input type = "radio" name="know"> Clubmates
+            <br>
+            <input type="submit" length=10px>
+        </div>
+    </form>
     <div class="aboutus">
         <div class="heading2">
             <p> Want to know <b>more</b> about us?</p>

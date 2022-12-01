@@ -119,15 +119,15 @@
   text-shadow: 0 0 1px;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
 }
-.ch.green {
-  color: green;
+.ch.black {
+  color: black;
 }
 .ch.red {
   color: red;
 }
-.ch.green.active {
-  outline: dashed 10px rgba(200, 250, 100, .4);
+.ch.black.active {
+  outline: dashed 10px rgba(169,169,169);
 }
 .ch.red.active {
-  outline: dashed 10px rgba(250, 180, 180, .4);
+  outline: dashed 10px #FFCCCB;
 }
