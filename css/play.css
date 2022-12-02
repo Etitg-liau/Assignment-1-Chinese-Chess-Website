@@ -1,3 +1,6 @@
+.playbg{
+  background-color: tomato;
+}
 .row, .sq {
   box-sizing: border-box;
   position: relative;
