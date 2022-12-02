@@ -258,6 +258,23 @@ input:checked + .slider:before {
 .redpiece:hover{
     outline: dashed 10px #FFCCCB;
 }
+.legend{
+    border:4px dashed darkred;
+    margin-left:30%;
+    margin-right: 30%;
+}
+.layout{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:black;
+    text-align: center;
+    font-size: 30px;
+}
+.alt{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:red;
+    text-align: center;
+    font-size: 30px;
+}
 /*puzzle pages*/
 .prev{
     padding:32px;
