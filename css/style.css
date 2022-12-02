@@ -165,9 +165,69 @@ input:checked + .slider:before {
 .about{
     align-content: center;
 }
+/* Interactive Board */
 .menu{
     display: flex;
     justify-content: center;
+    background: url('../Images/Board.jpg');
+    height:95vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.overallalignment{
+    width:95vh;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row-5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 .sectionhead{
     display:flex;
@@ -182,6 +242,15 @@ input:checked + .slider:before {
     font-family:'Gowun Batang', serif;
     color:darkslateblue;
     font-size: 23px;
+}
+.findout{
+    color: darkcyan;
+    font-size:30px;
+}
+.findout:hover{
+    color:blue;
+    cursor:pointer;
+    text-shadow:1px 1px blue;
 }
 /*puzzle pages*/
 .prev{
@@ -266,7 +335,46 @@ table, th, td {
     text-align: center;
     font-size: 20px;
     font-family: 'Poor Story', bold;
+    background-color:lightgreen;
 }
 .aboutus{
     background-color: lightcyan;
+}
+.submitbutton{
+    background-color: green;
+    color:white;
+    font-size:30px;
+    padding: 9px 18px;
+    font-family:'Righteous', cursive;
+    display:inline-block;
+    cursor:pointer;
+    border-radius: 20px;
+    border-width: 8px;
+    border-color: lime;
+}
+/*How To Play*/
+.htp{
+    background-color:darkblue;
+}
+.htpheader{
+    display:flex;
+    color:lightsteelblue;
+    font-size: 30px;
+    justify-content: center;
+    text-align:center;
+    font-family:'Righteous',cursive;
+}
+.htpheader2{
+    display:flex;
+    color:lightcoral;
+    font-size: 30px;
+    justify-content: center;
+    text-align:center;
+    font-family:'Gowun Batang', serif;
+}
+.htptext{
+    font-size:20px;
+    text-align:center;
+    font-family:'Gowun Batang', serif;
+    color:white;
 }
