@@ -1,5 +1,6 @@
 .playbg{
   background-color: tomato;
+  border: 2px solid black;
 }
 .row, .sq {
   box-sizing: border-box;

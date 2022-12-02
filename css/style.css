@@ -64,7 +64,7 @@
     font-family: 'Carter One', cursive;
 }
 .gmail:hover{
-    background-color: red;
+    background-color: #FF8886;
     color:white;
 }
 .instagram:hover{
@@ -73,7 +73,7 @@
 }
 .discord:hover{
     color:white;
-    background-color:darkslategray;
+    background-color:#7289DA;
 }
 /* English to Chinese*/
 .headingmenu3{
@@ -251,6 +251,12 @@ input:checked + .slider:before {
     color:blue;
     cursor:pointer;
     text-shadow:1px 1px blue;
+}
+.blackpiece:hover{
+    outline: dashed 10px rgba(169,169,169);
+}
+.redpiece:hover{
+    outline: dashed 10px #FFCCCB;
 }
 /*puzzle pages*/
 .prev{
