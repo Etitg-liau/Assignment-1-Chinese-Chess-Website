@@ -170,12 +170,12 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     background: url('../Images/Board.jpg');
-    height:95vh;
+    height:102vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 .overallalignment{
-    width:95vh;
+    width:102vh;
 }
 .row1{
     display: flex;
