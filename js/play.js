@@ -1,8 +1,8 @@
 'use strict'
-/// 绘制棋盘
-var sg = 64 // 64
-var sb = sg / 16 // 4
-var ssb = sb / 2 // 2
+// making the board
+var sg = 64 // 64 (8*8)
+var sb = sg / 16 // 4 
+var ssb = sb / 2 // 2 on both sides of the board
 var cont = document.querySelector('.cont')
 var bg = document.querySelector('.bg')
 var sqs = []

@@ -1,13 +1,9 @@
-.playbg{
-  background-color: tomato;
-  border: 2px solid black;
-}
 .row, .sq {
   box-sizing: border-box;
   position: relative;
 }
 .cont-wrap {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   top: 0;
