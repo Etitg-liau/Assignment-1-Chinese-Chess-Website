@@ -6,7 +6,7 @@ function myFunction() {
   if (mediaqueri.matches) { // If media query matches
     return 32
   } else {
-    return 64// 64 (8*8)
+    return 64 // 64 (8*8)
   }
 }
 var mediaqueri = window.matchMedia("(max-width: 400px)")

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- ID Assignment -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font for form -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Poor+Story&display=swap" rel="stylesheet">
+    <!-- Font for original css -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Righteous&family=Noto+Sans+SC&family=Gowun+Batang&family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/Normalize.css">
+    <script src="../js/script.js" differ></script>
+    <title>NP CChess</title>
+</head>
+<body>
+    <div class="heading">
+        <a href="../html/indexcn.html"><img src="../Images/Logo.png" class = "logo"></a>
+        <div class="headingmenucn">
+            <label>義安象棋俱乐部</label>
+            <p>运筹帷幄 决胜千里</p>
+        </div>
+        <div class="headingmenu1">
+        <br>
+        <a href="#About">关于我们</a>
+        </div>
+        <div class="headingmenu2">
+            <br>
+            <a href="../html/signup.html">注册</a>
+        </div>
+        <!-- English to Chinese -->
+        <div class="headingmenu3">
+            <label>ENG > 华文</label><br>
+            <label class="language">
+                <input type="checkbox" onchange='window.location.assign("../html/signup.html")' checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="subackground">
+        <div class="sectionhead">
+            <u><h1 class="sectionhead">注册</h1></u>
+        </div>
+    </div>
+    <!-- Form -->
+    <form class="form">
+        <label="signup">
+            <label> 姓名:<br>
+            <input type ="text" name = "name" required>
+            </label>
+            <br><br>
+            <label> 学生身份:<br>
+                <input type = "text" placeholder = "S1XXXXXXX" name = "userid" required>
+            </label>
+            <br><br>
+            <label>电邮:<br>
+                <input type="email" name ="email" required>
+            </label>
+            <br><br>
+            <label> 你是否義安理工学院的学生或讲师?<br></label>
+                <select onchange="fromnp(this);">
+                    <option value=""></option>
+                    <option value="yes">是</option>
+                    <option value="no">否</option>
+                </select>
+                <br>
+                <div id="ifYes" style="display: block;">
+                    <label>如果不来自義安理工学院,请敲入你的学会:</label>
+                    <br>
+                    <input type="text" id="not">
+                </div>
+            <br>
+            <label> 象棋经验：（如果没有经验能留空） 
+            </label><br>
+            <input type = "text" name ="experience" required>
+            <br>
+            <label>注意：即使没有经验也没关系</label>
+            <br><br>
+            <label> 你是怎么知道我们？:</label><br>
+            <input type = "radio" name="know"> IG <input type = "radio" name="know"> 网站 <input type = "radio" name="know"> 微信 <input type = "radio" name="know">课程辅助活动接待日 <input type = "radio" name="know"> 朋友 <input type = "radio" name="know"> 象棋会员
+            <br><br>
+            <input type="submit" length=10px class="submitbutton">
+        </label>
+    </form>
+    <div class="aboutus">
+        <div class="heading2">
+            <p id="socials"> 想更了解我们</p>
+            <p>俱乐部编号: 00000036</p>
+        </div>
+        <br>
+        <div class="section">
+            <div class="gmail">
+                <b><p>发个电邮:</p></b>
+                <a href="mailto:cca_chess@connect.np.edu.sg" target="blank"><img src="../Images/Gmail.png" width=200 height=100></a>
+            </div>
+            <div class="instagram">
+                <b><p>关注社交媒体:</p></b>
+                <a href="https://www.instagram.com/np_chess"><img src="../Images/Instagram.PNG" width="100" height= "100"></a><br>
+            </div>
+            <div class="discord">
+                <b><p>参加我们discord:</p></b>
+                <a href="https://discord.gg/3T5hjkXS"><img src="../Images/Discord.png" width="100" height="100"></a>
+            </div>
+            <br>
+            <img src="../Images/banquet.jpg" width="300"height = 200 class="imagesize1">
+            <div class="bottomsection"><p>跟毕业生参加宴会</p></div>
+            <h4>还下定不决心？注册还有一些好处： </h4>
+            <p>我们在节假日有外出活动，让会员们保持联系，玩得开心，甚至可以参加重要的活动，像宴会（上图），也有新加坡国一棋手出席.</p>
+            <p>我们将与其他学校的其他中国象棋俱乐部一起参加活动，共同交流和学习。偶尔我们会在每个组别之间举办一场小型比赛，奖品将颁发给每个组别的前三名。这样可以让会员了解比赛氛围，不会在外出比赛时不知所措。</p>
+            <img src= "../Images/CCA fiesta.jpeg" class="imagesize2">
+            <div class="bottomsection"><p>课程辅助活动接待日</p></div>
+        </div>
+    </div>
+</body>
+</html>
