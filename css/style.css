@@ -1,3 +1,21 @@
+/*Background Image*/
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.background{
+    width:100%;
+    height:100%;
+    background-image: url('../Images/Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.puzzle{
+    display: none;
+}
+/*Menu*/
 .heading{
     background-color: peru;
     display: flex;
@@ -11,6 +29,8 @@
 }
 .logo{
     float:left;
+    width:70px;
+    height:70px;
 }
 .headingmenucn{
     font-size: 20px;
@@ -166,16 +186,24 @@ input:checked + .slider:before {
     align-content: center;
 }
 /* Interactive Board */
+.boardimg {
+	margin-top: 20px; 
+	width: 600px; 
+	height: 600px; 
+	position: absolute;
+}
+.overallalignment img {
+	width: 60px;
+	height: 60px;
+}
 .menu{
     display: flex;
     justify-content: center;
-    background: url('../Images/Board.jpg');
-    height:102vh;
-    background-repeat: no-repeat;
-    background-position: center;
+    height:100vh;
 }
 .overallalignment{
-    width:102vh;
+    width:93vh;
+    z-index:2;
 }
 .row1{
     display: flex;
@@ -274,6 +302,12 @@ input:checked + .slider:before {
     color:red;
     text-align: center;
     font-size: 30px;
+}
+.imgsection{
+    width: 500px;
+    height:600px;
+    margin-left:25%;
+    margin-right:25%;
 }
 /*puzzle pages*/
 .prev{
@@ -401,4 +435,48 @@ table, th, td {
     text-align:center;
     font-family:'Gowun Batang', serif;
     color:white;
+}
+
+/* Alignment */
+@media screen and (max-width: 400px){
+	.background {
+        height:60%;
+    }
+    .overallalignment {
+        height: 45vh;
+    }
+    
+    .section{
+        width: 200px;
+        height:100px;
+        font-size:10px;
+    }
+    .imgsection{
+        width: 80%;
+        height: 200px;
+        margin-left:35%;
+        margin-right:35%;
+    }
+    .boardimg {
+        width: 98%;
+        height: 50%;
+    }
+        
+    .overallalignment img {
+        margin-left: 0;
+        width: 36px;
+        height: 36px;
+    }
+
+    .legend {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .blackpiece:hover{
+    outline: dashed 10px rgba(169,169,169);
+    }
+    .redpiece:hover{
+        outline: dashed 10px #FFCCCB;
+    }
 }
