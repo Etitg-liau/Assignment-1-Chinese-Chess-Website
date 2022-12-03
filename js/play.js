@@ -2,19 +2,19 @@
 // making the board
 var sg = 64
 
-function myFunction(sg) {
+function myFunction() {
   if (mediaqueri.matches) { // If media query matches
-    var sg = 32
-    return sg
+    return 32
   } else {
-    var sg = 64 // 64 (8*8)
-    return sg
+    return 64// 64 (8*8)
   }
 }
 var mediaqueri = window.matchMedia("(max-width: 400px)")
+
 mediaqueri.addListener(myFunction) // Call listener function at run time
+sg = myFunction();
  
-var sb = myFunction(sg) / 16 // 4 
+var sb = myFunction() / 16 // 4 
 var ssb = sb / 2 // 2 on both sides of the board
 var cont = document.querySelector('.cont')
 var bg = document.querySelector('.bg')
