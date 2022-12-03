@@ -12,25 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Righteous&family=Noto+Sans+SC&family=Gowun+Batang&display=swap" rel="stylesheet">
     <title>Joining Us</title>
     <div class="heading">
-        <a href="../index.html"><img src="../Images/Logo.png" class = "logoindex"></a>
+        <a href="indexcn.html"><img src="../Images/Logo.png" class = "logoindex"></a>
         <div class="headingmenucn">
-            <label>NP Chinese Chess</label>
+            <label>義安象棋俱乐部</label>
             <p>运筹帷幄 决胜千里</p>
             <br>
         </div>
         <div class="headingmenu1">
-        <br>
-        <a href="../index.html#About">About Us</a>
+            <br>
+            <a href="#About">关于我们</a>
         </div>
         <div class="headingmenu2">
             <br>
-            <a href="../html/signup.html">Join Us</a>
+            <a href="../html/signupcn.html">注册</a>
         </div>
         <!-- English to Chinese -->
         <div class="headingmenu3">
             <label>ENG > 华文</label><br>
             <label class="language">
-                <input type="checkbox">
+                <input type="checkbox" onchange='window.location.assign("../html/beginner.html")' checked>
                 <span class="slider round"></span>
             </label>
         </div>
@@ -39,58 +39,56 @@
 <body>
     <div class="htp">
         <div class="htpheader">
-            <u><h2>How To Play </h2></u>
+            <u><h2>如何下象棋 </h2></u>
         </div>
-        <h3 class="htpheader2"><b><u>Understanding the Pieces</u></b></h3>
+        <h3 class="htpheader2"><b><u>了解棋子</u></b></h3>
         <div class="htptext">
-            <b><h1>1. The General</h1></b>
+            <b><h1>一、'将' 和 '帥'</h1></b>
             <img src="../Images/General.PNG">
-            <p>The General is the most important piece on the board. It is like a king, where once the king is dead,<br> you <u><b>lose the game</b></u>. Similarly, the aim of the goal is to take the enemy's general down. The General<br> moves one position at a time, horizontally or vertically, but is restricted to moving within <b><u>The Palace</b></u>.<br> Black General is represented using '将' and Red General '帅' or '帥'</p>
-            <b><h1>2. The Guards / Advisors</h1></b>
+            <p>将是棋盘上最重要的棋子。它就像一个国王，一旦国王死了,你输了比赛。<br>同样，目标的目的是击落敌人的将军。一般
+                一次水平或垂直移动一个位置，但仅限于在宫殿内移动。</p>
+            <b><h1>二、'仕' 和 '士'</h1></b>
             <img src="../Images/Guard.PNG">
-            <p>The guards can only move diagonally one position at a time, but cannot leave <b><u>The Palace</u></b>. There are<br> two advisors, one on each side of the general.<br> Advisors are represented using '仕' for red and '士' for black</p>
-            <b><h1>The Palace</h1></b>
+            <p>守卫一次只能沿对角线移动一个位置，但不能离开<b><u>宫殿</u></b>。有两个顾问，一个在将军的每一边。</p>
+            <b><h1>宫殿</h1></b>
             <img src="../Images/Palace1.PNG" width="400" height = 350 class="palace1"><img src="../Images/Palace2.PNG" width="400" height = 350 class="palace2">
-            <p>The Palace is a 3 x 3 box with a total of 9 positions inside.<br>As mentioned earlier, the general and two advisors cannot leave the palace.<br> The General starts in the center at the bottom of the board. The two generals <b><u>cannot face each other</u></b>,<br> i.e. no pieces in between both Generals</p>
-            <b><h1>3. The Pawns</h1></b>
+            <p>宫殿 是一个 3 x 3 的盒子，里面共有九个位置。<br>如前所述，将军和两名顾问不能离开宫殿。<br>将军从棋盘底部的中央开始。两位将军<b><u>不能面对对方</u></b>，即两位将军之间没有棋子</p>
+            <b><h1>三、'兵' 和 '卒'</h1></b>
             <img src="../Images/Pawns.PNG">
-            <p>There are 5 pawns (also known as soldiers). They can move forward one position at a time. The pawn captures by moving <br> forward into a piece. But, as you’ll see in the section on The River, when the pawn crosses the river<br> in the center of the board, the pawn can then move and capture forward or sideways, one spot at a time.<br>               
-                Unlike international chess, the pawn does not get promoted to another piece when it reaches the last row.</p>
-            <b><h1> 4. The Chariot</h1></b>
+            <p>棋盘里有五个兵。他们可以一次向前移动一个位置。棋子通过将 <br> 向前移动成一块来捕获。但是，正如您将在河牌一节中看到的那样，当棋子在棋盘中央过河时<br>，棋子随后可以向前或向侧面移动并捕获一个点。<br>
+                与国际象棋不同，棋子到达最后一排时不会升级为另一颗棋子。</p>
+            <b><h1> 4. '车' 和 '車'</h1></b>
             <img src="../Images/Chariot.PNG">
-            <p>The chariot (or car) is the most powerful piece. The chariot can move orthogonally as far as<br> there are open positions, and he captures an opponent piece by landing on it. Chinese Chess<br> <b><u>does not have a queen</u></b>, so it is important to keep this piece alive.</p>
-            <p>The chariot is represented using '车' or '車'</p>
-            <b><h1>5. The Horse</h1></b>
+            <p>车是最强大的棋子。只要 有空位，战车就可以正交移动，他通过降落在对手的棋子上来捕获对手的棋子。中国象棋<br> <b><u>没有皇后</u></b>，所以让这颗棋子存活很重要。</p>
+            <b><h1>5. '马' 和 '馬'</h1></b>
             <img src="../Images/Horse.PNG">
-            <p>The horse moves similar (but not exactly) to a knight in international chess. The horse moves two positions<br> in one direction, then continues to one in another direction. If there is a piece in the horse’s path,<br> it cannot jump over the piece. It starts to become a more valuable piece in the endgame.</p>
-            <p>The horse is represented using '马' or '馬'</p>
-            <b><h1>6. The Elephant</h1></b>
+            <p>马移动类似于（但不完全）国际象棋中的骑士。马在一个方向上移动两个位置<br>，然后在另一个方向上继续到一个位置。如果马的路径上有棋子，<br> 它不能跳过棋子。它开始成为残局中更有价值的棋子。</p>
+            <b><h1>6.'象' 和 '相'</h1></b>
             <img src="../Images/Elephant.PNG">
-            <p>The elephant moves diagonally exactly two positions. There cannot be a piece blocking its movement.<br>
-                The elephant cannot cross The River. The elephants are often used in conjunction to protect each other<br> and the general.</p>
-                <p>The elephant is represented using 象 for black and 相 for red</p>
-            <b><h1>7. The Cannon</h1></b>
+            <p>大象正好沿对角线移动两个位置。不能有棋子挡住它的移动。<br>
+                大象不能过河。大象经常一起使用以保护彼此和将军。</p>
+            <b><h1>7. 炮</h1></b>
             <img src="../Images/Cannon.PNG">
-            <p>The cannon can move as many positions as are open horizontally or vertically. It is a powerful piece,<br>
-                 just slightly inferior to a chariot. It is unique as it must jump over a piece (the cannon mount)<br>
-                 along its path (a piece from either army) and then land on its victim to capture a piece.</p>
-            <p>The mount can be the enemies piece or your own pieces.</p>
-            <p>The cannon is represented using 炮</p>
+            <p>大炮可以移动与水平或垂直打开的位置一样多的位置。这是一个强大的作品，<br>
+                只是略逊于战车。它是独一无二的，因为它必须跳过一块（大炮架）<br>
+                沿着它的路径（来自任一军队的一块）然后降落在它的受害者身上以捕获一块。</p>
+           <p>坐骑可以是敌人的棋子，也可以是自己的棋子。</p>
+           
 
-            <b><h1>The River</h1></b>
+            <b><h1>楚河、漢界</h1></b>
             <img src="../Images/River.PNG">
-            <p>It divides the board in half, and strengthen soldiers to be able to move diagonally, and does not<br>
-                allow the elephants to cross, or even pieces in The Palace.</p>
+            <p>楚河或漢界将棋盘分成两半，并加强士兵能够对角线移动，并且不会<br>
+                                让大象穿过，甚至在宫殿里碎片。</p>
             <br><br>
-            <b><h1>Setting Up The Board</h1></b>
+            <b><h1>摆放棋盘</h1></b>
             <img src="../Images/Setup.PNG" class="boardsetup">
-            <p>Familiarize yourself with the lines on the board before placing your pieces on the board. Chinese chess pieces are<br>
-                 placed on line intersections, which are called points, instead of in the actual board squares.</p>
-            <p>Each piece has a designated place on the board, as in International chess. To play Chinese chess,<br> you need to make sure that your pieces are all in the correct place on the board.</p>
-            <u><p>On the row nearest you, place your pieces on the points from left to right:<br></u> the chariot, horse, elephant, guard, king, guard, elephant, knight, and chariot.</p>
-            <u><p>On the third row,<br></u> place your two cannons on the intersection that is one space from the edge of the right and left side of the board.</p>
-            <u><p>On the fourth row,<br></u> place your soldier pieces on every other intersection, beginning with the first intersection on the edge of the board.</p>
-            <b><h2>As shown by the Picture above</h2></b>
+            <p>在将棋子放在棋盘上之前，先熟悉棋盘上的线条。中国棋子是<br>
+                放置在称为点的线交叉点上，而不是实际的棋盘正方形中。</p>
+           <p>每个棋子在棋盘上都有一个指定的位置，就像在国际象棋中一样。要下中国象棋，<br>您需要确保您的棋子都在棋盘上的正确位置。</p>
+           <u><p>在离您最近的一排，将您的棋子放在从左到右的点上：<br></u>战车、马、大象、守卫、国王、守卫、大象、骑士和战车。 </p>
+           <u><p>在第三行，<br></u>将你的两门大炮放在距离棋盘左右边缘一格的交叉点上。</p>
+           <u><p>在第四行，<br></u>从棋盘边缘的第一个交叉点开始，每隔一个交叉点放置您的士兵棋子。</p>
+           <b><h2>如上图所示</h2></b>
             </div>
     </div>
 </body>
