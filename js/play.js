@@ -1,7 +1,20 @@
 'use strict'
 // making the board
-var sg = 64 // 64 (8*8)
-var sb = sg / 16 // 4 
+var sg = 64
+
+function myFunction(sg) {
+  if (mediaqueri.matches) { // If media query matches
+    var sg = 32
+    return sg
+  } else {
+    var sg = 64 // 64 (8*8)
+    return sg
+  }
+}
+var mediaqueri = window.matchMedia("(max-width: 400px)")
+mediaqueri.addListener(myFunction) // Call listener function at run time
+ 
+var sb = myFunction(sg) / 16 // 4 
 var ssb = sb / 2 // 2 on both sides of the board
 var cont = document.querySelector('.cont')
 var bg = document.querySelector('.bg')
@@ -32,10 +45,10 @@ for (var i = 0; i < mks.length; i++) {
   var mk = document.createElement('div')
   mk.classList.add('mk')
   mk.style.top = (mks[i][0] * sg + ssb) + 'px'
-  mk.style.left = (mks[i][1] * sg + ssb) + 'px'
+  mk.style.left = ((mks[i][1] * sg + ssb) + 'px')
   bg.appendChild(mk)
 }
-/// 绘制棋子
+/// chess pieces
 var chs = document.querySelector('.chs')
 var chsArr = [
   [1, '車', 0, 0], [1, '車', 0, 8],
@@ -62,7 +75,7 @@ function placeChess(side, name, y, x, i){
   ch.classList.add('ch', side > 0 ? 'red': 'black')
   ch.setAttribute('i', i)
   ch.style.top = en(y) + 'px'
-  ch.style.left = en(x) + 'px'
+  ch.style.left = (en(x) + 'px')
   chs.appendChild(ch)
 }
 function en(n){
@@ -95,10 +108,10 @@ document.addEventListener('mousedown', function(e){
   if (pick[side] != null) {
     var x = de(e.pageX - bg.offsetLeft)
     var y = de(e.pageY - bg.offsetTop)
-    if (!(x >= -0.4 && x <= 8.4 &&
-          y >= -0.4 && y <= 9.4)) return
-    if (abs(round(x) - x) > 0.4 ||
-        abs(round(y) - y) > 0.4) return
+    if (!(x >= -0.2 && x <= 8.2 &&
+          y >= -0.2 && y <= 9.2)) return
+    if (abs(round(x) - x) > 0.2 ||
+        abs(round(y) - y) > 0.2) return
     x = round(x)
     y = round(y)
     var c = chsArr[pick[side]]
@@ -110,7 +123,7 @@ document.addEventListener('mousedown', function(e){
       }
     })
     var ch = chss[pick[side]]
-    ch.style.left = en(x) + 'px'
+    ch.style.left = (en(x) + 'px')/4
     ch.style.top = en(y) + 'px'
     c[2] = y
     c[3] = x

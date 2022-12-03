@@ -131,3 +131,142 @@
 .ch.red.active {
   outline: dashed 10px #FFCCCB;
 }
+@media screen and (max-width: 400px){
+  .row, .sq {
+    box-sizing: border-box;
+    position: relative;
+  }
+  .cont-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+  }
+  .cont-wrap:after {
+    display: inline-block;
+    content: "";
+    height: 100%;
+    vertical-align: middle;
+  }
+  .cont {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .bg {
+    box-sizing: content-box;
+    border: solid 4px #666;
+    border-left: none;
+    position: relative;
+    overflow: hidden;
+  }
+  .bg, .chs {
+    -webkit-user-select: none;
+    cursor: default;
+  }
+  .row {
+    height: 32px;
+  }
+  /*.row {
+    border-top: solid 2px #666;
+  }
+  .row:nth-child(1) {
+    border-top: none;
+  }
+  */
+  .sq {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border-left: solid 4px #666;
+    border-top: solid 4px #666;
+   /*overflow: hidden;
+   */
+  }
+  .sq:nth-child(1) {
+   /*border-left: none;
+   */
+  }
+  .row:nth-child(1) .sq {
+    border-top: none;
+  }
+  .row.middle .sq {
+    border-left: none;
+  }
+  .row.middle .sq:nth-child(1) {
+    border-left: solid 4px #666;
+  }
+  .sq.cross:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -49px;
+    width: 95px;
+    height: 95px;
+    box-sizing: border-box;
+    border-top: solid 4px #666;
+    transform: rotate(45deg);
+    transform-origin: top center;
+  }
+  .sq.cross:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: -52px;
+    width: 95px;
+    height: 95px;
+    box-sizing: border-box;
+    border-top: solid 4px #666;
+    transform: rotate(-45deg);
+    transform-origin: top center;
+  }
+  .mk {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    margin-left: -4px;
+    margin-top: -4px;
+   /*box-shadow: 0 0 0 $sb #666;
+   */
+    outline: dotted 4px #666;
+  }
+  .chs {
+    z-index: 1;
+    position: absolute;
+  }
+  .ch {
+    position: absolute;
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    border-radius: 26px;
+    line-height: 26px;
+    text-align: center;
+    font-size: 18px;
+    margin-left: -13px;
+    margin-top: -13px;
+    vertical-align: middle;
+    background: wheat;
+    text-shadow: 0 0 1px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+  }
+  .ch.black {
+    color: black;
+  }
+  .ch.red {
+    color: red;
+  }
+  .ch.red1 {
+    color: red;
+  }
+  .ch.black.active {
+    outline: dashed 5px rgba(169,169,169);
+  }
+  .ch.red.active {
+    outline: dashed 5px #FFCCCB;
+  }
+  
+}
