@@ -378,6 +378,7 @@ table, th, td {
 /*How To Play*/
 .htp{
     background-color:darkblue;
+    padding:auto;
 }
 .htpheader{
     display:flex;
