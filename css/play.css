@@ -126,7 +126,7 @@
   color: red;
 }
 .ch.black.active {
-  outline: dashed 10px rgba(169,169,169);
+  outline: dashed 10px #d3d3d3;
 }
 .ch.red.active {
   outline: dashed 10px #FFCCCB;
@@ -263,7 +263,7 @@
     color: red;
   }
   .ch.black.active {
-    outline: dashed 5px rgba(169,169,169);
+    outline: dashed 5px #d3d3d3;
   }
   .ch.red.active {
     outline: dashed 5px #FFCCCB;

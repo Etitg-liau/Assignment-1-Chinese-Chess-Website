@@ -12,10 +12,10 @@ function myFunction() {
 var mediaqueri = window.matchMedia("(max-width: 400px)")
 
 mediaqueri.addListener(myFunction) // Call listener function at run time
-sg = myFunction();
+sg = myFunction()
  
 var sb = myFunction() / 16 // 4 
-var ssb = sb / 2 // 2 on both sides of the board
+var ssb = sb / 2 // 2
 var cont = document.querySelector('.cont')
 var bg = document.querySelector('.bg')
 var sqs = []
@@ -45,10 +45,10 @@ for (var i = 0; i < mks.length; i++) {
   var mk = document.createElement('div')
   mk.classList.add('mk')
   mk.style.top = (mks[i][0] * sg + ssb) + 'px'
-  mk.style.left = ((mks[i][1] * sg + ssb) + 'px')
+  mk.style.left = (mks[i][1] * sg + ssb) + 'px'
   bg.appendChild(mk)
 }
-/// chess pieces
+/// 绘制棋子
 var chs = document.querySelector('.chs')
 var chsArr = [
   [1, '車', 0, 0], [1, '車', 0, 8],
@@ -75,7 +75,7 @@ function placeChess(side, name, y, x, i){
   ch.classList.add('ch', side > 0 ? 'red': 'black')
   ch.setAttribute('i', i)
   ch.style.top = en(y) + 'px'
-  ch.style.left = (en(x) + 'px')
+  ch.style.left = en(x) + 'px'
   chs.appendChild(ch)
 }
 function en(n){
@@ -108,10 +108,10 @@ document.addEventListener('mousedown', function(e){
   if (pick[side] != null) {
     var x = de(e.pageX - bg.offsetLeft)
     var y = de(e.pageY - bg.offsetTop)
-    if (!(x >= -0.2 && x <= 8.2 &&
-          y >= -0.2 && y <= 9.2)) return
-    if (abs(round(x) - x) > 0.2 ||
-        abs(round(y) - y) > 0.2) return
+    if (!(x >= -0.4 && x <= 8.4 &&
+          y >= -0.4 && y <= 9.4)) return
+    if (abs(round(x) - x) > 0.4 ||
+        abs(round(y) - y) > 0.4) return
     x = round(x)
     y = round(y)
     var c = chsArr[pick[side]]
@@ -123,7 +123,7 @@ document.addEventListener('mousedown', function(e){
       }
     })
     var ch = chss[pick[side]]
-    ch.style.left = (en(x) + 'px')/4
+    ch.style.left = en(x) + 'px'
     ch.style.top = en(y) + 'px'
     c[2] = y
     c[3] = x
@@ -142,6 +142,10 @@ document.addEventListener('mousedown', function(e){
 })
 // 实时计算 cursor更新
 function canGo(c, x, y){
+  // 不能吃右方 无需判断 因为点击即重新选取
+  // if (chsArr.some(function(c1){
+  //   return !c1.dead && c1[2] === y && c1[3] === x && c1[0] === c[0]
+  // })) return false
   let dx = x - c[3]
   let dy = y - c[2]
   if (c[1] === '兵' || c[1] === '卒') {
@@ -195,7 +199,7 @@ function canGo(c, x, y){
     }, 0)
     return n === 0
   }
-  if (c[1] === '炮' || c[1] === '炮') {
+  if (c[1] === '炮') {
     if (dx * dy !== 0) return false
     var n = chsArr.reduce(function(m, c1){
       var dx1 = (c1[3] - c[3]) / sign(dx)
@@ -228,4 +232,4 @@ function nextTurn(){
     // }, 2000)
   } else {
   }
-} 
+}
