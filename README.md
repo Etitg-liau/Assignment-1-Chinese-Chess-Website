@@ -11,9 +11,9 @@ Well, you might be wondering where I got this idea from? I realized that the ICT
 Being a curious person, I decided to lookup for a Chinese Chess website for Ngee Ann Poly since it was my other interest group, but to no avail. **It was then that I decided to create one to promote Ngee Ann Polytechnic Chinese Chess SIG. Of course to get people to join our Chinese Chess Club as well**. With the help of friends, lecturers and members from the club, this project was completed!
 <br><br>
 
-Well, I have basic wireframe that I thought of before and not like my current websites updated wireframe..
+Well, I have 2 wireframes, one that is a draft before starting the website and the updated wireframe which encompasses everything.
 
-You can view it under the wireframe folder
+You can view both under the wireframe folder
 # Features
 Moving On to Features, and I am excited to tell you that there are a lot of them!
 
