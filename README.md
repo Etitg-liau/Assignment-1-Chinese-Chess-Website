@@ -8,10 +8,10 @@ Despite there being challenges that I encountered, I am still glad of the final 
 Well, you might be wondering where I got this idea from? I realized that the ICT society CCAs, Overflow and Nullsec, both of which I participate quite actively in, have websites about their Special Interest Groups. 
 <br><br>
 
-Being a curious person, I decided to lookup for a Chinese Chess website for Ngee Ann Poly since it was my other interest group, but to no avail. It was then that I decided to create one to promote Ngee Ann Polytechnic Chinese Chess SIG. With the help of friends, lecturers and members from the club, this project was completed!
+Being a curious person, I decided to lookup for a Chinese Chess website for Ngee Ann Poly since it was my other interest group, but to no avail. **It was then that I decided to create one to promote Ngee Ann Polytechnic Chinese Chess SIG. Of course to get people to join our Chinese Chess Club as well**. With the help of friends, lecturers and members from the club, this project was completed!
 <br><br>
 
-Well, I have a basic wireframe that I thought of but it is very plain and not like my current website.
+Well, I have basic wireframe that I thought of before and not like my current websites updated wireframe..
 
 You can view it under the wireframe folder
 # Features
@@ -44,7 +44,7 @@ As mentioned earlier, there are some bugs in the Chinese Chess Game where you ca
 
 Form may be able to receive nonsensical inputs :open_mouth:<br>
 
-Recommended to view on a computer preferably 1920 x 1200 px.<br>
+Recommended to view on a computer preferably 1093 x 790 px.<br>
 Phone screens are supported with 370px x 720 px. (width must be 720px else [bye bye chess pieces and board])<br>
 Unfortunately, some screens like tablets, larger/smaller computers are unable to display appropiately.<br>
 <br>
@@ -90,7 +90,7 @@ for his help on javascript function and suggestions
 
 Chinese Chess Members suggestions:<br>
 - Jonathan - Logo Design <br>
-- Nicholas - Images and Content
+- Nicholas - Images
 <br><br>
 
 International Chess Member:<br>
