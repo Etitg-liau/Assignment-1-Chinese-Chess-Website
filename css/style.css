@@ -35,6 +35,10 @@ body{
 .headingmenucn{
     font-size: 20px;
 }
+.f2fimg{
+    width:300px;
+    height:400px;
+}
 /* About Us */
 .aboutsection{
     background-color: goldenrod;

@@ -45,7 +45,7 @@ As mentioned earlier, there are some bugs in the Chinese Chess Game where you ca
 Form may be able to receive nonsensical inputs :open_mouth:<br>
 
 Recommended to view on a computer preferably 1920 x 1200 px.<br>
-Phone screens are supported with 360px x 720 px to 400px x 720 px. (width must be 720px else [bye bye chess pieces])<br>
+Phone screens are supported with 370px x 720 px. (width must be 720px else [bye bye chess pieces and board])<br>
 Unfortunately, some screens like tablets, larger/smaller computers are unable to display appropiately.<br>
 <br>
 
