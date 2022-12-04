@@ -65,6 +65,7 @@ https://www.shutterstock.com/image-vector/vector-chinese-chess-xiangqi-pieces-is
 
 Acknowledges:
 https://w3schools.com/ - help when fixing bugs
+https://kuula.co/share/NZSK6?logo=-1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1 - CCA Fiesta Chesss
 
 Gameplay:
 https://codepen.io/fritx/pen/BEoEdO
