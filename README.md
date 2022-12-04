@@ -10,21 +10,21 @@ Well, I have a basic wireframe that I thought of but it is very plain and not li
 # Features
 Moving On to Features, and I am excited to tell you that there are a lot of them!
 
-Feature 1: Translating the whole website to Chinese or English when sliding top right hand corner of the page
-Feature 2: An interactive Chinese Chess Board as a Menu
-Feature 3: Animated welcome message
-Feature 4: Signing Up Form
-Feature 5: Chinese Chess Puzzles/EndGame viewer
-Feature 6: Header
-Feature 7: Interactive Socials
+- Feature 1: Translating the whole website to Chinese or English when sliding top right hand corner of the page
+- Feature 2: An interactive Chinese Chess Board as a Menu
+- Feature 3: Animated welcome message
+- Feature 4: Signing Up Form
+- Feature 5: Chinese Chess Puzzles/EndGame viewer
+- Feature 6: Header
+- Feature 7: Interactive Socials
 Last but not Least,
-Feature 8: A Real Live Chinese Chess game that can be played, (coded in javascript)
+- Feature 8: A Real Live Chinese Chess game that can be played, (coded in javascript)
 Note: There are unfortunately some bugs, where you cannot end the game.
 
 
-So therefore, features wanted to implement:
-Solving the bug to the Chinese Chess game
-Question Section where users can Post their Questions on Chinese Chess for everyone to see
+So therefore, features wanted to implement:<br>
+- Solving the bug to the Chinese Chess game
+- Question Section where users can Post their Questions on Chinese Chess for everyone to see
 
 # Technologies Used
 
